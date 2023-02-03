@@ -1,39 +1,41 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Javascript-Inline</title>
 
-<script>
-function bodyOnload() {
-window.document.images[0]. src="img/img1.jpg";
-}
+    <script>
+        function bodyload() {
+            window.document.images[0].src = "img/laptop.jpg";
+            window.document.forms[0].elements[1].value = "Register"
+        }
 
 
-</script>
-
-
+    </script>
 
 </head>
-<body onload="bodyOnload">
-<img width="100px" height="100px" >
-<div><form>
-<h2>Register</h2>
-User Name:<input type="text"style="margin-right:10px"><input type="button">
-</form>
-</div>
+
+<body onload="bodyload()">
+    <img width="100px" height="100px">
+    <div>
+        <form>
+            <h2>Register</h2>
+            User Name:<input type="text" style="margin-right:10px"> <input type="button">
+        </form>
+    </div>
 
 
-<div>
-<form style="margin-top:20px">
+    <div>
+        <form style="margin-top:20px">
 
-Password:<input type="password" style="margin-right:10px"><input type="button" >
-
-
-</form>
+            Password:<input type="password" style="margin-right:10px"><input type="button">
 
 
+        </form>
 
-</div>
+
+
+    </div>
 
 
 </body>
