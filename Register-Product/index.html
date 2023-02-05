@@ -7,19 +7,18 @@
 
     <script>
         function RegisterClick() {
-           x= document.getElementById('lblName');
+         x= document.getElementById('lblName').innerHTML = document.getElementById('txtName').value;
+        y= document.getElementById('lblPrice').innerHTML = document.getElementById('txtPrice').value;
+           z= document.getElementById('lblMfd').innerHTML = document.getElementById('txtMfd').value;
 
-            if(x=value){
-               document.getElementById('txtName').innerHTML.value;
-               
+            if (x,y,z=='') {
+                alert("please enter the value of name ,price, mfd")
             }
-            else{
-                
-            }
-          
+           
+           
 
-            document.getElementById('lblPrice').innerHTML = document.getElementById('txtPrice').value;
-            document.getElementById('lblMfd').innerHTML = document.getElementById('txtMfd').value;
+
+           
 
             document.getElementById('lblShippedTo').innerHTML = document.getElementById('lstShippedTo').value;
 
@@ -42,7 +41,7 @@
 
 
     </script>
-<link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="Style.css">
 </head>
 
 <body class="cointner-fluid">
@@ -99,50 +98,50 @@
             </div>
         </div>
 
-<div class="centre">
-        <div class="col-9">
-            <h3>Product Details</h3>
-            <table class="centre">
-                <colgroup span="1" style="font-weight: bold; background-color: lightpink; color:white"></colgroup>
-                <tr>
-                    <td>Name</td>
-                    <td id="lblName"></td>
-                </tr>
+        <div class="centre">
+            <div class="col-9">
+                <h3>Product Details</h3>
+                <table class="centre">
+                    <colgroup span="1" style="font-weight: bold; background-color: lightpink; color:white"></colgroup>
+                    <tr>
+                        <td>Name</td>
+                        <td id="lblName"></td>
+                    </tr>
 
-                <tr>
-                    <td>Price</td>
-                    <td id="lblPrice"></td>
+                    <tr>
+                        <td>Price</td>
+                        <td id="lblPrice"></td>
 
-                </tr>
+                    </tr>
 
-                <tr>
-                    <td>Manufactued</td>
-                    <td id="lblMfd"></td>
+                    <tr>
+                        <td>Manufactued</td>
+                        <td id="lblMfd"></td>
 
-                </tr>
+                    </tr>
 
-                <tr>
-                    <td>Shipped To</td>
-                    <td id="lblShippedTo"></td>
+                    <tr>
+                        <td>Shipped To</td>
+                        <td id="lblShippedTo"></td>
 
-                </tr>
+                    </tr>
 
-                <tr>
-                    <td>Stock</td>
-                    <td id="lblStock"></td>
+                    <tr>
+                        <td>Stock</td>
+                        <td id="lblStock"></td>
 
-                </tr>
+                    </tr>
 
-            </table>
+                </table>
+
+            </div>
 
         </div>
-
     </div>
     </div>
-</div>
 
-<script src="..node_modules/jquery/dist/jquery.min.js"></script>
-<script src="..node_modules/bootsrap/dist/js/boostrap.bundle.js"></script>
+    <script src="..node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="..node_modules/bootsrap/dist/js/boostrap.bundle.js"></script>
 
 </body>
 
