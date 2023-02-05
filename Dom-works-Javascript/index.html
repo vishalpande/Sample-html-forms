@@ -5,9 +5,14 @@
     <title>Javascript-Inline</title>
 
     <script>
+
         function bodyload() {
-            window.document.images[0].src = "img/laptop.jpg";
-            window.document.forms[0].elements[1].value = "Register"
+          
+        document.querySelector("#pic").src="img/laptop.jpg"
+        document.querySelector(".btn").value='Register';
+        document.querySelector(".btn").style.backgroundColor='yellow';
+    
+    
         }
 
 
@@ -16,11 +21,11 @@
 </head>
 
 <body onload="bodyload()">
-    <img width="100px" height="100px">
+    <img  width="200" height="300px"id="pic">
     <div>
         <form>
             <h2>Register</h2>
-            User Name:<input type="text" style="margin-right:10px"> <input type="button">
+            User Name:<input type="text" style="margin-right:10px" > <input type="button" class="btn">
         </form>
     </div>
 
@@ -28,7 +33,7 @@
     <div>
         <form style="margin-top:20px">
 
-            Password:<input type="password" style="margin-right:10px"><input type="button">
+            Password:<input type="password" style="margin-right:10px"><input type="button" class="btn">
 
 
         </form>
